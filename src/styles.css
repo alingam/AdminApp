@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+.padding-10 {
+    padding: 10px 10px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.small-logo {
+    width: 80%;
+}
+
+.navbar-brand {
+    height: auto !important;
+}
+
+.brand-logo {
+    width: 25%;
+}
+
+.title-banner {
+    background: url(./assets/img/backgrounds-01.png) no-repeat center center;
+    background-size: cover;
+}
+
+.title-header {
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.align-right {
+    text-align: right
+}
+
+.table{
+    margin-top:10px;
+    margin-bottom:20px;
+    border: 1px solid #dee2e6;
+}
+
+.table .thead-light th {
+    color: #495057;
+    background-color: #e9ecef;
+    padding: 15px 20px;
+    border-color: #dee2e6;
+    font-weight: 500;
+}
+
+.table>tbody>tr>td,.table>tbody>tr, .table>tbody>tr>th{
+    padding: 15px 20px;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}

@@ -4,7 +4,7 @@ declare let AWS: any;
 declare let AWSCognito: any;
 
 @Component({
-    selector: 'awscognito-angular2-app',
+    selector: 'spark-admin-app',
     template: '<p>Hello and welcome!</p>'
 })
 export class AboutComponent {
@@ -12,7 +12,7 @@ export class AboutComponent {
 }
 
 @Component({
-    selector: 'awscognito-angular2-app',
+    selector: 'spark-admin-app',
     templateUrl: './landinghome.html'
 })
 export class HomeLandingComponent{
@@ -22,7 +22,7 @@ export class HomeLandingComponent{
 }
 
 @Component({
-    selector: 'awscognito-angular2-app',
+    selector: 'spark-admin-app',
     templateUrl: './home.html'
 })
 export class HomeComponent implements OnInit {

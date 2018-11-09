@@ -5,7 +5,7 @@ import { ChallengeParameters, CognitoCallback, LoggedInCallback } from '../../..
 import { DynamoDBService } from '../../../service/ddb.service';
 
 @Component({
-    selector: 'awscognito-angular2-app',
+    selector: 'spark-admin-app',
     templateUrl: './login.html',
     styleUrls: ['./login.component.css']
 })

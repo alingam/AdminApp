@@ -14,7 +14,7 @@ export class NewPasswordUser {
  * the registration of the user.
  */
 @Component({
-    selector: 'awscognito-angular2-app',
+    selector: 'spark-admin-app',
     templateUrl: './newpassword.html'
 })
 export class NewPasswordComponent implements CognitoCallback {

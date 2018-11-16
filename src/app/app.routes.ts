@@ -9,6 +9,7 @@ import { ForgotPassword2Component, ForgotPasswordStep1Component } from './public
 import { LogoutComponent, RegistrationConfirmationComponent } from './public/auth/confirm/confirmRegistration.component';
 import { ResendCodeComponent } from './public/auth/resend/resendCode.component';
 import { NewPasswordComponent } from './public/auth/newpassword/newpassword.component';
+import { CreateGameComponent } from './secure/create-game/create-game.component'
 
 const homeRoutes: Routes = [
     {
@@ -44,6 +45,7 @@ const secureHomeRoutes: Routes = [
         path: 'securehome', component: SecureHomeComponent, children: [
             { path: 'logout', component: LogoutComponent },
             { path: 'games', component: GamesComponent },
+            { path: 'new', component: CreateGameComponent },
             { path: '', component: GamesComponent }]
     }
 ];

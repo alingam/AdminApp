@@ -26,6 +26,12 @@ a {
     color: #3880ff;
 }
 
+a:focus,
+a:hover {
+    color: #3880ff;
+    text-decoration: none !important
+}
+
 .content {
     width: 100%;
     height: 100%;
@@ -36,6 +42,10 @@ a {
     height: 100%;
     background: url(../img/intro-bg.jpg) no-repeat center center;
     background-size: cover;
+}
+
+.margin-right-10 {
+    margin-right: 10px;
 }
 
 .placeholder {
@@ -217,12 +227,51 @@ p.copyright {
     margin: 15px 0 0;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active{
-    background: #3880ff;
-    border: 1px solid #3880ff;
-    padding: 10px 50px;
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background: #3880ff !important;
+    border: 1px solid #3880ff !important;
+    padding: 8px 50px;
     font-size: 18px;
     font-weight: 400;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+    background: #6E308C !important;
+    border: 1px solid #6E308C !important;
+    padding: 8px 50px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.game-input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 500px;
+    border: 1px solid #F0F0F0;
+    background: #F0F0F0;
+}
+
+
+.no-items {
+    padding: 200px !important;
+    text-align: center;
+    color: grey;
+    font-size: 25px;
+}
+
+.fa-plus-circle {
+    color: grey !important;
+    font-size: 50px !important;
 }

@@ -11,6 +11,7 @@ import { routing } from './app.routes';
 import { AboutComponent, HomeComponent, HomeLandingComponent } from './public/home.component';
 import { AwsUtil } from './service/aws.service';
 import { GamesComponent } from './secure/games/games.component';
+import { CreateGameComponent } from './secure/create-game/create-game.component';
 import { SecureHomeComponent } from './secure/landing/securehome.component';
 import { DynamoDBService } from './service/ddb.service';
 import { LoginComponent } from './public/auth/login/login.component';
@@ -20,6 +21,7 @@ import { LogoutComponent, RegistrationConfirmationComponent } from './public/aut
 import { ResendCodeComponent } from './public/auth/resend/resendCode.component';
 import { NewPasswordComponent } from './public/auth/newpassword/newpassword.component';
 import { MFAComponent } from './public/auth/mfa/mfa.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -37,6 +39,7 @@ import { MFAComponent } from './public/auth/mfa/mfa.component';
         HomeLandingComponent,
         HomeComponent,
         GamesComponent,
+        CreateGameComponent,
         SecureHomeComponent,
         AppComponent
     ],
@@ -44,6 +47,7 @@ import { MFAComponent } from './public/auth/mfa/mfa.component';
         BrowserModule,
         FormsModule,
         HttpModule,
+        HttpClientModule,
         routing
     ],
     providers: [

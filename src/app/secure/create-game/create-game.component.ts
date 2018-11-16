@@ -14,30 +14,18 @@ interface GamesData {
 
 @Component({
     selector: 'spark-admin-app',
-    templateUrl: './games.html'
+    templateUrl: './create-game.html'
 })
-export class GamesComponent implements LoggedInCallback {
+export class CreateGameComponent {
 
     public cognitoId: String;
 
     allGames: any = [];
+    clueNumber: any = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
     constructor(public router: Router, public userService: UserLoginService,
         public userParams: UserParametersService, public cognitoUtil: CognitoUtil, private http: HttpClient) {
-        this.userService.isAuthenticated(this);
-        console.log('In GamesComponent');
-    }
-
-    isLoggedIn(message: string, isLoggedIn: boolean) {
-        if (!isLoggedIn) {
-            this.router.navigate(['/home/login']);
-        } else {
-            this.getGames();
-        }
-    }
-
-    createGame() {
-        this.router.navigate(['/securehome/new']);
+        console.log('In CreateGameComponent');
     }
 
     getGames() {

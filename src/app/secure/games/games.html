@@ -1,36 +1,29 @@
 <div class="col-lg-12 main-container">
-    <h3 class="float-left">HAVE FUN CREATING GAMES FOR THE KIDS!</h3>
-    <button class="btn btn-primary float-right">Create Game</button>
+  <h3 class="float-left">HAVE FUN CREATING GAMES FOR THE KIDS!</h3>
+  <button class="btn btn-primary float-right" (click)="createGame()">Create Game</button>
 </div>
 <div class="col-lg-12 table-responsive">
-    <table class="table">
-        <thead class="thead-light">
-          <tr>
-            <th scope="col" colspan="2">NAME OF THE GAME</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="col-lg-9">Mark</td>
-            <td class="col-lg-3 align-right">
-                <a class='float-right'>|&nbsp;Delete</a>
-                <a class='float-right'>Print QR codes&nbsp;</a>
-            </td>
-          </tr>
-          <tr>
-            <td class="col-lg-8">Mark</td>
-            <td class="col-lg-3 align-right">
-                <a class='float-right'>|&nbsp;Delete</a>
-                <a class='float-right'>Print QR codes&nbsp;</a>
-            </td>
-          </tr>
-          <tr>
-            <td class="col-lg-8">Mark</td>
-            <td class="col-lg-3 align-right">
-                <a class='float-right'>|&nbsp;Delete</a>
-                <a class='float-right'>Print QR codes&nbsp;</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col" colspan="2">NAME OF THE GAME</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="allGames.length>0">
+      <tr *ngFor="let game of allGames">
+        <td>{{game.name}}</td>
+        <td class="col-lg-3 align-right">
+          <a class='float-right' (click)="deleteGame(game)">&nbsp;Delete</a>
+          <a class='float-right' (click)="discuss(game)">Print QR codes&nbsp;|</a>
+        </td>
+      </tr>
+    </tbody>
+    <tbody *ngIf="allGames.length==0">
+      <tr>
+        <td colspan="2" class="no-items">
+          <a (click)="createGame()"><i class="fa fa-plus-circle" aria-hidden="true"></i><br />Create a Scavenger Hunt!</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
